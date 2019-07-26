@@ -2,8 +2,8 @@ namespace :dev do
   desc "Configura o ambiente de desenvolvimento"
   task setup: :environment do
     if Rails.env.development?
-      show_spinner("Apagando DB....","Concluído)") { %x(rails db:drop)}
-      show_spinner("Criando DB","Concluído)") { %x(rails db:create)}
+      # show_spinner("Apagando DB....","Concluído)") { %x(rails db:drop)}
+      # show_spinner("Criando DB","Concluído)") { %x(rails db:create)}
       show_spinner("Migrando DB","Concluído)") { %x(rails db:migrate)}
       %x(rails dev:add_mining_types)
       %x(rails dev:add_coins)
