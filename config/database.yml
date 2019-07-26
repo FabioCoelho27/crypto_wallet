@@ -21,5 +21,13 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: db/production.sqlite3
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  adpter: postgres
+  host: ec2-107-20-185-16.compute-1.amazonaws.com
+  database: d1i5jlo34rrel5
+  username: btrmbufpqsdmgf
+  password: d026cffd08ffab61edce9f50d76f38cafbf9ad5a87df5e83502f5003060b614f
+  port: 5432
+  encode: utf8
+  reconnect: false
+

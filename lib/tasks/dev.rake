@@ -8,6 +8,7 @@ namespace :dev do
       %x(rails dev:add_mining_types)
       %x(rails dev:add_coins)
     else
+      show_spinner("Criando DB","Concluído)") { %x(rails db:create)}
       show_spinner("Migrando DB","Concluído)") { %x(rails db:migrate)}
       %x(rails dev:add_mining_types)
       %x(rails dev:add_coins)
