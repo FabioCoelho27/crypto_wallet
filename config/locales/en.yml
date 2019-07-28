@@ -33,7 +33,7 @@ en:
   current_locale: "English (International)"
   wellcome: "Wellcome!"
   messages:
-    wellcome: "Wellcome Wallet, and app that you can register and keep up with your cryptocoins."
+    wellcome: "Wellcome Wallet, and app that you can register and keep up with your cryptocoins, enjoy"
     menu_msg: "To start, choose an option:"
     confirm: "Confirm?"
   
