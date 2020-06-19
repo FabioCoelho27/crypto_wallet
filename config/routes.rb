@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users, skip: :all
+  devise_for :users
   resources :mining_types
   get 'wellcome/index'
   resources :coins
