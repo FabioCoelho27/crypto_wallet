@@ -25,7 +25,12 @@
           <%= link_to 'English',root_path(locale: 'en'), class:"nav-link" %>
         </li>
       </ul>
-
+      <% if notice %>
+        <p class="alert alert-success"><%= notice %></p>
+      <% end %>
+      <% if alert %>
+        <p class="alert alert-danger"><%= alert %></p>
+      <% end %>
       <%= yield %>
     </div>
   </body>
