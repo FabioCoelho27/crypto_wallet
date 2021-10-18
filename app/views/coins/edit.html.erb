@@ -1,0 +1,7 @@
+<h1><%= t('coins.editing_coin')%></h1>
+
+<%= render 'form', coin: @coin %>
+<br>
+
+<%= link_to t('links.show'), @coin, class:"btn btn-outline-primary" %> |
+<%= link_to t('links.back'), coins_path, class:"btn btn-outline-primary" %>

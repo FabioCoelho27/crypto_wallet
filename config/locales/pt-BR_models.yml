@@ -1,0 +1,27 @@
+"pt-BR":
+  activerecord:
+    models:
+      coin: 
+        one: Moeda
+        other: Moedas
+      mining_type:
+        one: Tipo de mineração
+        other: Tipos de mineração
+    errors:
+      messages:
+        record_invalid: 'A validação falhou: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Não é possível excluir o registro pois existe um %{record} dependente
+          has_many: Não é possível excluir o registro pois existem %{record} dependentes
+    attributes:
+      coin:
+        description: Descrição
+        acronym: Sigla
+        mining_type: Tipo de mineração
+        url_image: imagem url
+      mining_type:
+        mining_type: Tipo de mineração 
+        description: Descrição
+        acronym: Sigla
+        created_at: Criado 
+        updated_at: Atualizado
